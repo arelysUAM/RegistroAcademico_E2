@@ -1,0 +1,10 @@
+C:\Users\Arelys Castillo\source\repos\RegistroAcademico_Ejercicio2\RegistroAcademico_Ejercicio2\bin\Debug\RegistroAcademico_Ejercicio2.exe.config
+C:\Users\Arelys Castillo\source\repos\RegistroAcademico_Ejercicio2\RegistroAcademico_Ejercicio2\bin\Debug\RegistroAcademico_Ejercicio2.exe
+C:\Users\Arelys Castillo\source\repos\RegistroAcademico_Ejercicio2\RegistroAcademico_Ejercicio2\bin\Debug\RegistroAcademico_Ejercicio2.pdb
+C:\Users\Arelys Castillo\source\repos\RegistroAcademico_Ejercicio2\RegistroAcademico_Ejercicio2\obj\Debug\RegistroAcademico_Ejercicio2.csproj.AssemblyReference.cache
+C:\Users\Arelys Castillo\source\repos\RegistroAcademico_Ejercicio2\RegistroAcademico_Ejercicio2\obj\Debug\RegistroAcademico_Ejercicio2.Properties.Resources.resources
+C:\Users\Arelys Castillo\source\repos\RegistroAcademico_Ejercicio2\RegistroAcademico_Ejercicio2\obj\Debug\RegistroAcademico_Ejercicio2.csproj.GenerateResource.cache
+C:\Users\Arelys Castillo\source\repos\RegistroAcademico_Ejercicio2\RegistroAcademico_Ejercicio2\obj\Debug\RegistroAcademico_Ejercicio2.csproj.CoreCompileInputs.cache
+C:\Users\Arelys Castillo\source\repos\RegistroAcademico_Ejercicio2\RegistroAcademico_Ejercicio2\obj\Debug\RegistroAcademico_Ejercicio2.exe
+C:\Users\Arelys Castillo\source\repos\RegistroAcademico_Ejercicio2\RegistroAcademico_Ejercicio2\obj\Debug\RegistroAcademico_Ejercicio2.pdb
+C:\Users\Arelys Castillo\source\repos\RegistroAcademico_Ejercicio2\RegistroAcademico_Ejercicio2\obj\Debug\RegistroAcademico_Ejercicio2.Form1.resources
