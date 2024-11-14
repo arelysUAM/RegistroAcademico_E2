@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Arelys Castillo\\Desktop\\Ejercicio2_RegistroAcademico\\RegistroAcademico_Ejercicio2\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrador\\OneDrive\\Documentos\\RegistroAcademico_E2\\RegistroAcademico_Ejercicio2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EDA328A3-D029-43B4-8C97-99CBDE1544FF}|RegistroAcademico_Ejercicio2\\RegistroAcademico_Ejercicio2.csproj|c:\\users\\arelys castillo\\desktop\\ejercicio2_registroacademico\\registroacademico_ejercicio2\\registroacademico_ejercicio2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EDA328A3-D029-43B4-8C97-99CBDE1544FF}|RegistroAcademico_Ejercicio2\\RegistroAcademico_Ejercicio2.csproj|c:\\users\\administrador\\onedrive\\documentos\\registroacademico_e2\\registroacademico_ejercicio2\\registroacademico_ejercicio2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EDA328A3-D029-43B4-8C97-99CBDE1544FF}|RegistroAcademico_Ejercicio2\\RegistroAcademico_Ejercicio2.csproj|solutionrelative:registroacademico_ejercicio2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDA328A3-D029-43B4-8C97-99CBDE1544FF}|RegistroAcademico_Ejercicio2\\RegistroAcademico_Ejercicio2.csproj|C:\\Users\\Arelys Castillo\\Desktop\\Ejercicio2_RegistroAcademico\\RegistroAcademico_Ejercicio2\\registroacademico_ejercicio2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDA328A3-D029-43B4-8C97-99CBDE1544FF}|RegistroAcademico_Ejercicio2\\RegistroAcademico_Ejercicio2.csproj|c:\\users\\administrador\\onedrive\\documentos\\registroacademico_e2\\registroacademico_ejercicio2\\registroacademico_ejercicio2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDA328A3-D029-43B4-8C97-99CBDE1544FF}|RegistroAcademico_Ejercicio2\\RegistroAcademico_Ejercicio2.csproj|solutionrelative:registroacademico_ejercicio2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Arelys Castillo\\Desktop\\Ejercicio2_RegistroAcademico\\RegistroAcademico_Ejercicio2\\RegistroAcademico_Ejercicio2\\bin\\Debug\\registro.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrador\\OneDrive\\Documentos\\RegistroAcademico_E2\\RegistroAcademico_Ejercicio2\\RegistroAcademico_Ejercicio2\\bin\\Debug\\registro.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RegistroAcademico_Ejercicio2\\bin\\Debug\\registro.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
@@ -22,60 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\OneDrive\\Documentos\\RegistroAcademico_E2\\RegistroAcademico_Ejercicio2\\RegistroAcademico_Ejercicio2\\Form1.cs",
+              "RelativeDocumentMoniker": "RegistroAcademico_Ejercicio2\\Form1.cs",
+              "ToolTip": "C:\\Users\\Administrador\\OneDrive\\Documentos\\RegistroAcademico_E2\\RegistroAcademico_Ejercicio2\\RegistroAcademico_Ejercicio2\\Form1.cs",
+              "RelativeToolTip": "RegistroAcademico_Ejercicio2\\Form1.cs",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAIwPEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T17:21:05.758Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "registro.txt",
-              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Ejercicio2_RegistroAcademico\\RegistroAcademico_Ejercicio2\\RegistroAcademico_Ejercicio2\\bin\\Debug\\registro.txt",
+              "DocumentMoniker": "C:\\Users\\Administrador\\OneDrive\\Documentos\\RegistroAcademico_E2\\RegistroAcademico_Ejercicio2\\RegistroAcademico_Ejercicio2\\bin\\Debug\\registro.txt",
               "RelativeDocumentMoniker": "RegistroAcademico_Ejercicio2\\bin\\Debug\\registro.txt",
-              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Ejercicio2_RegistroAcademico\\RegistroAcademico_Ejercicio2\\RegistroAcademico_Ejercicio2\\bin\\Debug\\registro.txt",
+              "ToolTip": "C:\\Users\\Administrador\\OneDrive\\Documentos\\RegistroAcademico_E2\\RegistroAcademico_Ejercicio2\\RegistroAcademico_Ejercicio2\\bin\\Debug\\registro.txt",
               "RelativeToolTip": "RegistroAcademico_Ejercicio2\\bin\\Debug\\registro.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-11-12T20:53:27.813Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Ejercicio2_RegistroAcademico\\RegistroAcademico_Ejercicio2\\RegistroAcademico_Ejercicio2\\Form1.cs",
-              "RelativeDocumentMoniker": "RegistroAcademico_Ejercicio2\\Form1.cs",
-              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Ejercicio2_RegistroAcademico\\RegistroAcademico_Ejercicio2\\RegistroAcademico_Ejercicio2\\Form1.cs",
-              "RelativeToolTip": "RegistroAcademico_Ejercicio2\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T19:48:26.884Z",
+              "WhenOpened": "2024-11-12T20:53:27.813Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Ejercicio2_RegistroAcademico\\RegistroAcademico_Ejercicio2\\RegistroAcademico_Ejercicio2\\Form1.cs",
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Administrador\\OneDrive\\Documentos\\RegistroAcademico_E2\\RegistroAcademico_Ejercicio2\\RegistroAcademico_Ejercicio2\\Form1.cs",
               "RelativeDocumentMoniker": "RegistroAcademico_Ejercicio2\\Form1.cs",
-              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Ejercicio2_RegistroAcademico\\RegistroAcademico_Ejercicio2\\RegistroAcademico_Ejercicio2\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "RegistroAcademico_Ejercicio2\\Form1.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Administrador\\OneDrive\\Documentos\\RegistroAcademico_E2\\RegistroAcademico_Ejercicio2\\RegistroAcademico_Ejercicio2\\Form1.cs [Design]",
+              "RelativeToolTip": "RegistroAcademico_Ejercicio2\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T17:44:53.53Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "EditorCaption": " [Design]"
             }
           ]
         }

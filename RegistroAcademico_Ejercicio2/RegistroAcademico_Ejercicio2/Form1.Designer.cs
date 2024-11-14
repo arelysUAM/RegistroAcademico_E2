@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.grpInformacionEstudiante = new System.Windows.Forms.GroupBox();
             this.txtEstudianteID = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
@@ -67,11 +68,17 @@
             this.guardarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tlsOpciones = new System.Windows.Forms.ToolStrip();
+            this.tlsbtnGuardar = new System.Windows.Forms.ToolStripButton();
+            this.tlsbtnEliminar = new System.Windows.Forms.ToolStripButton();
+            this.tlsbtnActualizar = new System.Windows.Forms.ToolStripButton();
+            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grpInformacionEstudiante.SuspendLayout();
             this.grpDatodAcademicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.tlsOpciones.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpInformacionEstudiante
@@ -95,22 +102,26 @@
             // 
             this.txtEstudianteID.Location = new System.Drawing.Point(194, 75);
             this.txtEstudianteID.Name = "txtEstudianteID";
-            this.txtEstudianteID.Size = new System.Drawing.Size(98, 26);
+            this.txtEstudianteID.Size = new System.Drawing.Size(98, 23);
             this.txtEstudianteID.TabIndex = 8;
+            this.txtEstudianteID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEstudianteID_KeyPress);
             // 
             // txtApellido
             // 
             this.txtApellido.Location = new System.Drawing.Point(88, 46);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(204, 26);
+            this.txtApellido.Size = new System.Drawing.Size(204, 23);
             this.txtApellido.TabIndex = 7;
+            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellido_KeyPress);
             // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(88, 17);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(204, 26);
+            this.txtNombre.Size = new System.Drawing.Size(204, 23);
             this.txtNombre.TabIndex = 6;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_Keypress);
             // 
             // lblEstudianteID
             // 
@@ -119,7 +130,7 @@
             this.lblEstudianteID.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblEstudianteID.Location = new System.Drawing.Point(8, 81);
             this.lblEstudianteID.Name = "lblEstudianteID";
-            this.lblEstudianteID.Size = new System.Drawing.Size(182, 22);
+            this.lblEstudianteID.Size = new System.Drawing.Size(155, 19);
             this.lblEstudianteID.TabIndex = 2;
             this.lblEstudianteID.Text = "Número de Estudiante:";
             // 
@@ -131,7 +142,7 @@
             this.lblApellido.Location = new System.Drawing.Point(8, 52);
             this.lblApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(75, 22);
+            this.lblApellido.Size = new System.Drawing.Size(64, 19);
             this.lblApellido.TabIndex = 1;
             this.lblApellido.Text = "Apellido:";
             // 
@@ -143,12 +154,13 @@
             this.lblNombre.Location = new System.Drawing.Point(8, 23);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(75, 22);
+            this.lblNombre.Size = new System.Drawing.Size(64, 19);
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre:";
             // 
             // cmbCarrera
             // 
+            this.cmbCarrera.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCarrera.FormattingEnabled = true;
             this.cmbCarrera.Items.AddRange(new object[] {
             "Derecho",
@@ -162,15 +174,16 @@
             "Marketing"});
             this.cmbCarrera.Location = new System.Drawing.Point(93, 15);
             this.cmbCarrera.Name = "cmbCarrera";
-            this.cmbCarrera.Size = new System.Drawing.Size(204, 28);
+            this.cmbCarrera.Size = new System.Drawing.Size(204, 24);
             this.cmbCarrera.TabIndex = 10;
             // 
             // txtPromedioGeneral
             // 
             this.txtPromedioGeneral.Location = new System.Drawing.Point(171, 54);
             this.txtPromedioGeneral.Name = "txtPromedioGeneral";
-            this.txtPromedioGeneral.Size = new System.Drawing.Size(98, 26);
+            this.txtPromedioGeneral.Size = new System.Drawing.Size(98, 23);
             this.txtPromedioGeneral.TabIndex = 9;
+            this.txtPromedioGeneral.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPromedioGeneral_KeyPress);
             // 
             // lblMateriasAprobadas
             // 
@@ -179,7 +192,7 @@
             this.lblMateriasAprobadas.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblMateriasAprobadas.Location = new System.Drawing.Point(14, 92);
             this.lblMateriasAprobadas.Name = "lblMateriasAprobadas";
-            this.lblMateriasAprobadas.Size = new System.Drawing.Size(166, 22);
+            this.lblMateriasAprobadas.Size = new System.Drawing.Size(141, 19);
             this.lblMateriasAprobadas.TabIndex = 5;
             this.lblMateriasAprobadas.Text = "Materias Aprobadas:";
             // 
@@ -190,7 +203,7 @@
             this.lblPromedio.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblPromedio.Location = new System.Drawing.Point(14, 54);
             this.lblPromedio.Name = "lblPromedio";
-            this.lblPromedio.Size = new System.Drawing.Size(151, 22);
+            this.lblPromedio.Size = new System.Drawing.Size(129, 19);
             this.lblPromedio.TabIndex = 4;
             this.lblPromedio.Text = "Promedio General:";
             // 
@@ -201,7 +214,7 @@
             this.lblCarrera.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblCarrera.Location = new System.Drawing.Point(14, 21);
             this.lblCarrera.Name = "lblCarrera";
-            this.lblCarrera.Size = new System.Drawing.Size(73, 22);
+            this.lblCarrera.Size = new System.Drawing.Size(62, 19);
             this.lblCarrera.TabIndex = 3;
             this.lblCarrera.Text = "Carrera:";
             // 
@@ -225,8 +238,9 @@
             // 
             this.txtMateriasA.Location = new System.Drawing.Point(186, 89);
             this.txtMateriasA.Name = "txtMateriasA";
-            this.txtMateriasA.Size = new System.Drawing.Size(98, 26);
+            this.txtMateriasA.Size = new System.Drawing.Size(98, 23);
             this.txtMateriasA.TabIndex = 11;
+            this.txtMateriasA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMateriasA_KeyPress);
             // 
             // lblEncabezado
             // 
@@ -237,7 +251,7 @@
             this.lblEncabezado.Location = new System.Drawing.Point(13, 59);
             this.lblEncabezado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEncabezado.Name = "lblEncabezado";
-            this.lblEncabezado.Size = new System.Drawing.Size(209, 22);
+            this.lblEncabezado.Size = new System.Drawing.Size(177, 19);
             this.lblEncabezado.TabIndex = 9;
             this.lblEncabezado.Text = "Información del Estudiante";
             // 
@@ -250,7 +264,7 @@
             this.lblEncabezado2.Location = new System.Drawing.Point(379, 59);
             this.lblEncabezado2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEncabezado2.Name = "lblEncabezado2";
-            this.lblEncabezado2.Size = new System.Drawing.Size(153, 22);
+            this.lblEncabezado2.Size = new System.Drawing.Size(127, 19);
             this.lblEncabezado2.TabIndex = 10;
             this.lblEncabezado2.Text = "Datos Académicos";
             // 
@@ -298,14 +312,14 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nombre,
@@ -379,19 +393,19 @@
             this.toolStripMenuEditar,
             this.toolStripMenuEliminar});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(133, 52);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(118, 48);
             // 
             // toolStripMenuEditar
             // 
             this.toolStripMenuEditar.Name = "toolStripMenuEditar";
-            this.toolStripMenuEditar.Size = new System.Drawing.Size(210, 24);
+            this.toolStripMenuEditar.Size = new System.Drawing.Size(117, 22);
             this.toolStripMenuEditar.Text = "Editar";
             this.toolStripMenuEditar.Click += new System.EventHandler(this.toolStripMenuEditar_Click);
             // 
             // toolStripMenuEliminar
             // 
             this.toolStripMenuEliminar.Name = "toolStripMenuEliminar";
-            this.toolStripMenuEliminar.Size = new System.Drawing.Size(210, 24);
+            this.toolStripMenuEliminar.Size = new System.Drawing.Size(117, 22);
             this.toolStripMenuEliminar.Text = "Eliminar";
             this.toolStripMenuEliminar.Click += new System.EventHandler(this.toolStripMenuEliminar_Click);
             // 
@@ -407,7 +421,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(792, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(792, 24);
             this.menuStrip1.TabIndex = 16;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -418,14 +432,14 @@
             this.salirToolStripMenuItem});
             this.archivoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
             // nuevoToolStripMenuItem
             // 
             this.nuevoToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
             this.nuevoToolStripMenuItem.ToolTipText = "Abrir nuevo archivo";
             this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
@@ -434,7 +448,7 @@
             // 
             this.salirToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.ToolTipText = "Salir del Sistema";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
@@ -446,39 +460,94 @@
             this.eliminarToolStripMenuItem});
             this.estudianteToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Window;
             this.estudianteToolStripMenuItem.Name = "estudianteToolStripMenuItem";
-            this.estudianteToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
+            this.estudianteToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.estudianteToolStripMenuItem.Text = "Estudiante";
             this.estudianteToolStripMenuItem.ToolTipText = "Guardar registro de estudiante";
             // 
             // guardarToolStripMenuItem
             // 
             this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
-            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
+            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.guardarToolStripMenuItem.Text = "Guardar";
-            this.guardarToolStripMenuItem.ToolTipText = "Guardar regisrtro de estudiante";
+            this.guardarToolStripMenuItem.ToolTipText = "Guardar registro de estudiante";
             this.guardarToolStripMenuItem.Click += new System.EventHandler(this.guardarToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             this.eliminarToolStripMenuItem.ToolTipText = "Eliminar registro de estudiante";
             this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
             // ayudaToolStripMenuItem
             // 
+            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.acercaDeToolStripMenuItem});
             this.ayudaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Window;
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // tlsOpciones
+            // 
+            this.tlsOpciones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tlsbtnGuardar,
+            this.tlsbtnEliminar,
+            this.tlsbtnActualizar});
+            this.tlsOpciones.Location = new System.Drawing.Point(0, 24);
+            this.tlsOpciones.Name = "tlsOpciones";
+            this.tlsOpciones.Size = new System.Drawing.Size(792, 25);
+            this.tlsOpciones.TabIndex = 17;
+            this.tlsOpciones.Text = "toolStrip1";
+            // 
+            // tlsbtnGuardar
+            // 
+            this.tlsbtnGuardar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tlsbtnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("tlsbtnGuardar.Image")));
+            this.tlsbtnGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tlsbtnGuardar.Name = "tlsbtnGuardar";
+            this.tlsbtnGuardar.Size = new System.Drawing.Size(23, 22);
+            this.tlsbtnGuardar.Text = "toolStripButton1";
+            this.tlsbtnGuardar.ToolTipText = "Guardar registro";
+            this.tlsbtnGuardar.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // tlsbtnEliminar
+            // 
+            this.tlsbtnEliminar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tlsbtnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("tlsbtnEliminar.Image")));
+            this.tlsbtnEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tlsbtnEliminar.Name = "tlsbtnEliminar";
+            this.tlsbtnEliminar.Size = new System.Drawing.Size(23, 22);
+            this.tlsbtnEliminar.Text = "toolStripButton2";
+            this.tlsbtnEliminar.ToolTipText = "Eliminar registro";
+            this.tlsbtnEliminar.Click += new System.EventHandler(this.tlsbtnEliminar_Click);
+            // 
+            // tlsbtnActualizar
+            // 
+            this.tlsbtnActualizar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tlsbtnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("tlsbtnActualizar.Image")));
+            this.tlsbtnActualizar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tlsbtnActualizar.Name = "tlsbtnActualizar";
+            this.tlsbtnActualizar.Size = new System.Drawing.Size(23, 22);
+            this.tlsbtnActualizar.ToolTipText = "Actualizar registro";
+            this.tlsbtnActualizar.Click += new System.EventHandler(this.tlsbtnActualizar_Click);
+            // 
+            // acercaDeToolStripMenuItem
+            // 
+            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.acercaDeToolStripMenuItem.Text = "Acerca de...";
+            this.acercaDeToolStripMenuItem.ToolTipText = "Información del sistema";
+            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(792, 562);
+            this.Controls.Add(this.tlsOpciones);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnEliminar);
@@ -504,6 +573,8 @@
             this.contextMenuStrip1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.tlsOpciones.ResumeLayout(false);
+            this.tlsOpciones.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -548,6 +619,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MateriasAprobadas;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuEditar;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuEliminar;
+        private System.Windows.Forms.ToolStrip tlsOpciones;
+        private System.Windows.Forms.ToolStripButton tlsbtnGuardar;
+        private System.Windows.Forms.ToolStripButton tlsbtnEliminar;
+        private System.Windows.Forms.ToolStripButton tlsbtnActualizar;
+        private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
     }
 }
 

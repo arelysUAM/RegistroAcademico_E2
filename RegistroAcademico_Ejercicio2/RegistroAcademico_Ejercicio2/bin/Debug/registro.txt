@@ -1,18 +1,24 @@
-Arelys
-Obando
-125
+Kimberly
+Zapata
+160
+Ingeniería en Sistemas
+86
+6
+Keyla
+Castillo
+115
 Arquitectura
-96
+93
 5
-Brayton
-Obando
-126
-Medicina
-89
-5
-Arlen
-Ramirez
-156
-Ingeniería Industrial
-96
-5
+Katherine
+Espinoza
+140
+Odontología
+92
+6
+María
+Espinoza
+180
+Ingeniería en Sistemas
+73
+8
